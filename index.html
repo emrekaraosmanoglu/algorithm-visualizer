@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Algorithm Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Algorithm Visualizer</h1>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+  <p class="hint">1️⃣ Dizi gir → 2️⃣ Algoritma seç → 3️⃣ Başlat</p>
+
+  <input type="text" id="arrayInput" placeholder="Örnek: 5, 3, 8, 1 (Boş bırakırsan otomatik üretir)">
+
+  <select id="algorithm" onchange="updateInfoUI()">
+    <option value="bubble">Bubble Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="merge">Merge Sort</option>
+    <option value="quick">Quick Sort</option>
+  </select>
+
+  <div class="controls">
+    <button id="startBtn" onclick="startSort()">Başlat</button>
+    <button onclick="reset()">Sıfırla</button>
+    <button onclick="generateSample()">Rastgele Dizi</button>
+  </div>
+
+  <div class="info">
+    <div class="algo-info">
+      <h3 id="algoTitle">Algorithm Info</h3>
+      <p id="complexity"></p>
+      <pre id="pseudo"></pre>
+      <p id="tip"></p>
+    </div>
+
+    <div style="width: 100%; margin-top: 10px;">
+        <span>Karşılaştırma: <b id="count">0</b></span>
+        <span style="margin-left: 15px;">Hız (Yavaş <-> Hızlı)</span>
+        <input type="range" min="10" max="1000" value="500" id="speed" style="width: 150px; vertical-align: middle;">
+    </div>
+  </div>
+
+  <div id="bars"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

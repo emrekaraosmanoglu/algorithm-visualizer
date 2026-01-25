@@ -96,12 +96,7 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 
 ## 👨‍💻 Geliştirici
 
-[Adınız](https://github.com/kullaniciadi)
+Mustafa Emre Karaosmanoğlu (https://github.com/emrekaraosmanoglu)
 
-## 📧 İletişim
-
-Sorularınız için: your.email@example.com
-
----
 
 ⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!
